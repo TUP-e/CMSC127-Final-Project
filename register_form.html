@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="auth.css">
+</head>
+<body>
+    <div class="auth-page-wrapper">
+        <div class="auth-form-container">
+            <h1>Get Started!</h1>
+            
+            <!-- Full name input field -->
+            <input 
+                type="text" 
+                id="register-full-name" 
+                placeholder="Full Name" 
+                required
+            >
+            
+            <!-- Student ID number input field -->
+            <input 
+                type="text" 
+                id="register-student-id" 
+                placeholder="Student ID Number" 
+                required
+            >
+            
+            <!-- Email address input field - used for login authentication -->
+            <input 
+                type="email" 
+                id="register-email" 
+                placeholder="Email Address" 
+                required
+            >
+            
+            <!-- Password input field - stores encrypted credentials -->
+            <input 
+                type="password" 
+                id="register-password" 
+                placeholder="Password" 
+                required
+            >
+           
+            <p class="role-label">Register as:</p>
+            
+            <!-- Role selection: determines user permissions and access level -->
+            <div class="role-selection-group">
+                <input 
+                    type="radio" 
+                    id="role-treasurer" 
+                    name="user-role" 
+                    value="Treasurer"
+                    required
+                >
+                <label for="role-treasurer">Treasurer</label>
+                
+                <input 
+                    type="radio" 
+                    id="role-member" 
+                    name="user-role" 
+                    value="Member"
+                    required
+                >
+                <label for="role-member">Member</label>
+            </div>           
+
+            <!-- Submit button to create new account -->
+            <button id="register-submit-btn" type="submit">Create Account</button>
+        </div>  
+    </div>
+</body>
+</html>
