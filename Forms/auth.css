@@ -1,0 +1,43 @@
+.auth-page-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.auth-form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    width: 400px;
+    padding: 40px 20px;
+    gap: 12px;
+}
+
+.role-selection-group {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="radio"] {
+    margin: 5px;
+}
+
+label {
+    margin: 5px;
+}
+
+.role-label {
+    margin: 10px 0 5px 0;
+}
+
+button {
+    margin: 5px;
+}
